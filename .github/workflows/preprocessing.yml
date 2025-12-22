@@ -26,12 +26,12 @@ jobs:
 
       - name: Run preprocessing script
         run: |
-          python Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/preprocessing/automate_Ida_Bagus_Gde_Raditya_Wedananta.py
+          python preprocessing/automate_Ida_Bagus_Gde_Raditya_Wedananta.py
           
       - name: Commit preprocessing output
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/preprocessing/dataset_preprocessing/
+          git add preprocessing/dataset_preprocessing/
           git commit -m "Auto update preprocessed dataset [CI]" || echo "No changes to commit"
           git push       
