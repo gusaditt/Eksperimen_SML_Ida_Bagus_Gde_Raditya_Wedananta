@@ -37,3 +37,4 @@ jobs:
           git add Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/preprocessing/dataset_preprocessing/
           git commit -m "Auto update preprocessed dataset [CI]" || echo "No changes to commit"
           git push        
+#test
