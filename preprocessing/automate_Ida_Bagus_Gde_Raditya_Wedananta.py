@@ -4,8 +4,8 @@ from sklearn.preprocessing import StandardScaler
 import os
 
 def preprocess_data(
-    input_path="Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/dataset_raw/diabetes.csv",
-    output_path="Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/preprocessing/dataset_preprocessing/dataset_preprocessing.csv"
+    input_path="dataset_raw/diabetes.csv",
+    output_path="preprocessing/dataset_preprocessing/dataset_preprocessing.csv"
 ):
     # Load dataset
     df = pd.read_csv(input_path)
