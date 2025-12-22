@@ -2,12 +2,10 @@ name: Automated Data Preprocessing
 
 on:
   push:
-    paths:
-      - "Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/dataset_raw/**"
-      - "Eksperimen_SML_Ida_Bagus_Gde_Raditya_Wedananta/preprocessing/**"
-      - "requirements.txt"
-
+    branches:
+      - main
   workflow_dispatch:
+
 jobs:
   preprocessing:
     runs-on: ubuntu-latest
